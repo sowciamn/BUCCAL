@@ -87,6 +87,7 @@
         :items-per-page="20"
         hide-default-footer
         @page-count="pageCount = $event"
+        mobile-breakpoint="0"
       >
       </v-data-table>
       <div class="text-center pt-2">
