@@ -3,7 +3,7 @@
     <v-card>
       <v-card-title>
         <!-- 月選択 -->
-        <v-col cols="4">
+        <v-col cols="12">
           <v-menu
             ref="menu"
             v-model="menu"
@@ -40,9 +40,8 @@
             </v-date-picker>
           </v-menu>
         </v-col>
-        <v-col cols="8"></v-col>
         <!-- サマリー -->
-        <v-col cols="4">
+        <v-col cols="12">
           <v-simple-table>
             <template v-slot:default>
               <thead>
