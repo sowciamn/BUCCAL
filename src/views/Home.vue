@@ -81,7 +81,7 @@
         :items="tableData"
         :search="search"
         :loading="loading"
-        :sort-by="'category'"
+        :sort-by="'date'"
         :sort-desc="true"
         :page.sync="page"
         :items-per-page="20"
@@ -147,6 +147,7 @@ export default {
     /** テーブルのヘッダー設定 */
     tableHeaders() {
       return [
+        { text: "日付", value: "date", align: "end" },
         { text: "カテゴリ", value: "category" },
         { text: "内容", value: "content" },
         { text: "作業時間", value: "workH", align: "end" },
